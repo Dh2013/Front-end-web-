@@ -1,0 +1,79 @@
+.element{
+        display: flex;
+        margin:0;
+        padding:0;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-shrink: 1;
+    }
+    li{
+        width: 20px;
+        margin: 10px;
+    }
+    .Content{
+        display:grid;
+        
+    }
+    ul{
+        overflow: auto;
+    }
+    ul li{
+        list-style-type: none;
+        float: left;
+    }
+    ul li a i{
+        background: #205d7a;
+        color: #fff;
+        border-radius: 20px;
+        width:40px;
+        height: 40px;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 15%;
+       /* transition: all 0.2s ease-in-out;*/
+      
+
+    }
+    header{
+        grid-area: a;
+    }
+section{
+    grid-area: c;
+}
+    ul li a i:hover{
+        opacity: 7; 
+    }
+    .fa-facebook{
+        background: #3b5998;
+    }
+    .fa-linkedin{
+        background: #007bb6;
+    }
+    .fa-twitter{
+        background: #00aced;
+    }
+    
+   section{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 30px 0 40px;
+       margin-bottom: 30px;
+       /*text-align: center;*/
+       overflow: hidden;
+       position: relative;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 10px;
+       grid-auto-rows: 100px;
+       margin-left: 170px;
+       border: 1px solid black;
+
+   }
+   body{
+       font-size:27px;
+   }
+   
+   #netContent{
+       display: grid;
+   }
